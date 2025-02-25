@@ -57,29 +57,29 @@ const LandingPage = () => {
         <h2 className="text-center mb-4">Our Services</h2>
         <Row className="align-items-center mb-4">
           <Col md={6} className="text-center">
-            <Image src="/digital-wallet.jpg" alt="Digital Wallet" fluid rounded />
+            <Image src="/transaction-tracking.jpg" alt="Real-Time Transaction Tracking" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
-            <h3>Digital Wallet</h3>
-            <p>Manage your chama contributions and withdrawals easily.</p>
+            <h3>Real-Time Transaction Tracking</h3>
+            <p>Automatically record all contributions and payouts.</p>
           </Col>
         </Row>
         <Row className="align-items-center mb-4 flex-md-row-reverse">
           <Col md={6} className="text-center">
-            <Image src="/group-savings.jpg" alt="Group Savings" fluid rounded />
+            <Image src="/record-keeping.jpg" alt="Automated Record Keeping" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
-            <h3>Group Savings</h3>
-            <p>Save collectively and achieve financial goals faster.</p>
+            <h3>Automated Record Keeping</h3>
+            <p>Eliminate manual ledgers by digitally storing transaction history.</p>
           </Col>
         </Row>
         <Row className="align-items-center mb-4">
           <Col md={6} className="text-center">
-            <Image src="/investment.jpg" alt="Investment Opportunities" fluid rounded />
+            <Image src="/financial-reports.jpg" alt="Financial Reports" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
-            <h3>Investment Opportunities</h3>
-            <p>Grow your funds with safe and profitable investments.</p>
+            <h3>Financial Reports</h3>
+            <p>Get insights into your chama's financial health with detailed reports and charts.</p>
           </Col>
         </Row>
       </Container>
@@ -87,29 +87,35 @@ const LandingPage = () => {
       <Container id="features" className="my-5">
         <h2 className="text-center mb-4">Why Choose Us?</h2>
         <Row>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-credit-card fs-2 text-primary"></i>
             <h4>Automated Transactions</h4>
             <p>Effortlessly manage contributions and payouts with our automated system, saving you time and reducing errors.</p>
           </Col>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-bar-chart fs-2 text-primary"></i>
             <h4>Transparent Reporting</h4>
             <p>Gain complete visibility into your chama's finances with detailed reports and real-time updates.</p>
           </Col>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-shield-lock fs-2 text-primary"></i>
             <h4>Secure Platform</h4>
             <p>Rest assured that your chama's funds are safe and secure with our robust security measures.</p>
           </Col>
         </Row>
         <Row>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-gear fs-2 text-primary"></i>
             <h4>Customizable Settings</h4>
             <p>Tailor your chama's experience to your specific needs with flexible settings for contribution amounts and more.</p>
           </Col>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-wallet2 fs-2 text-primary"></i>
             <h4>Multi-Channel Payment Integration</h4>
             <p>Direct integration with Mpesa and bank accounts for automated transaction recording.</p>
           </Col>
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-headset fs-2 text-primary"></i>
             <h4>Dedicated Support</h4>
             <p>Our friendly and knowledgeable support team is always available to answer your questions and provide assistance.</p>
           </Col>
@@ -130,5 +136,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
 
