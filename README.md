@@ -50,6 +50,12 @@ A slide deck that summarizes the project’s key features and benefits. Perfect 
  🛠 How We’re Building It  
 We’re using Agile Development, which means we build the app in small steps, test it often, and improve it based on feedback.  
 
+For questions or inquiries, please contact:
+Precious Ndulu
+Email: preciousndulu42@gmail.com
+
+
+
 
 
 
