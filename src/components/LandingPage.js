@@ -21,17 +21,22 @@ const LandingPage = () => {
         </Navbar>
       </div>
 
-      <Container className="jumuia-container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center" style={{
-        backgroundImage: `url('/jImages/imageThree.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
-        <h1 className="text-primary fw-bold">Jumuiya Pay</h1>
-        <p className="text-muted mt-3">
-          Empowering chama groups with seamless financial services and efficient contribution management.
-        </p>
-        <Button variant="primary" className="mt-4">Get Started</Button>
-      </Container> 
+<Container
+  fluid
+  className="jumuia-container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center w-100 m-0"
+  style={{
+    backgroundImage: `url('/jImages/bgHome.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  <h1 style={{ color: "white" }}>FundConnect</h1>
+  <p style={{ color: "white" }}>
+    Empowering chama groups with seamless financial services and efficient contribution management.
+  </p>
+  <Button className="Hbutton">Get Started</Button>
+</Container>
+
 
 
       <Container id="about" className="my-5">
@@ -40,7 +45,7 @@ const LandingPage = () => {
             <Image src="/jImages/imageFour.jpg" alt="About Us" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
-            <h2 className="text-primary">About Us</h2>
+            <h2 className="text-bold">About Us</h2>
             <h4 className="text-muted">Strengthening communities, one chama at a time</h4>
             <div className="t-divider my-3"></div>
             <p className="text-muted">
@@ -89,53 +94,61 @@ const LandingPage = () => {
         </Row>
       </Container>
 
-      <Container id="features" className="my-5">
-        <h2 className="text-center mb-4">Why Choose Us?</h2>
-        <Row>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-credit-card fs-2 text-primary"></i>
-            <h4>Automated Transactions</h4>
-            <p>Effortlessly manage contributions and payouts with our automated system, saving you time and reducing errors.</p>
-          </Col>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-bar-chart fs-2 text-primary"></i>
-            <h4>Transparent Reporting</h4>
-            <p>Gain complete visibility into your chama's finances with detailed reports and real-time updates.</p>
-          </Col>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-shield-lock fs-2 text-primary"></i>
-            <h4>Secure Platform</h4>
-            <p>Rest assured that your chama's funds are safe and secure with our robust security measures.</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-gear fs-2 text-primary"></i>
-            <h4>Customizable Settings</h4>
-            <p>Tailor your chama's experience to your specific needs with flexible settings for contribution amounts and more.</p>
-          </Col>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-wallet2 fs-2 text-primary"></i>
-            <h4>Multi-Channel Payment Integration</h4>
-            <p>Direct integration with Mpesa and bank accounts for automated transaction recording.</p>
-          </Col>
-          <Col md={4} className="mb-4 text-center">
-            <i className="bi bi-headset fs-2 text-primary"></i>
-            <h4>Dedicated Support</h4>
-            <p>Our friendly and knowledgeable support team is always available to answer your questions and provide assistance.</p>
-          </Col>
-        </Row>
-      </Container>
 
-      <Container id="contact" className="my-5 text-center">
-        <h2>Contact Us</h2>
-        <p className="text-muted">
-          Have questions? Our dedicated team is ready to assist you. Connect with us for support, information, or to discuss how our platform can elevate your chama's financial journey.
-        </p>
-        <a href="mailto:support@jumuiyapay.com" className="text-primary fs-3">
-          <i className="bi bi-envelope-fill"></i>
-        </a>
-      </Container>
+<Container id="features" className="my-5">
+  <h2 className="text-center mb-4">Why Choose Us?</h2>
+  <Row>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-credit-card fs-2 feature-icon"></i>
+      <h4>Automated Transactions</h4>
+      <p>Effortlessly manage contributions and payouts with our automated system, saving you time and reducing errors.</p>
+    </Col>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-bar-chart fs-2 feature-icon"></i>
+      <h4>Transparent Reporting</h4>
+      <p>Gain complete visibility into your chama's finances with detailed reports and real-time updates.</p>
+    </Col>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-shield-lock fs-2 feature-icon"></i>
+      <h4>Secure Platform</h4>
+      <p>Rest assured that your chama's funds are safe and secure with our robust security measures.</p>
+    </Col>
+  </Row>
+  <Row>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-gear fs-2 feature-icon"></i>
+      <h4>Customizable Settings</h4>
+      <p>Tailor your chama's experience to your specific needs with flexible settings for contribution amounts and more.</p>
+    </Col>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-wallet2 fs-2 feature-icon"></i>
+      <h4>Multi-Channel Payment Integration</h4>
+      <p>Direct integration with Mpesa and bank accounts for automated transaction recording.</p>
+    </Col>
+    <Col md={4} className="mb-4 text-center">
+      <i className="bi bi-headset fs-2 feature-icon"></i>
+      <h4>Dedicated Support</h4>
+      <p>Our friendly and knowledgeable support team is always available to answer your questions and provide assistance.</p>
+    </Col>
+  </Row>
+</Container>
+
+
+
+<Container
+  id="contact"
+  fluid
+  className="my-5 text-center w-100 m-0"
+>
+  <h2>Contact Us</h2>
+  <p>
+    Have questions? Our dedicated team is ready to assist you. Connect with us for support, information, or to discuss how our platform can elevate your chama's financial journey.
+  </p>
+  <a href="mailto:support@jumuiyapay.com" className="text-white fs-3">
+    <i className="bi bi-envelope-fill"></i>
+  </a>
+</Container>
+
     </>
   );
 };
