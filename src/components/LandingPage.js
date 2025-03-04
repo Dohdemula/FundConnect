@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Navbar, Nav, Button, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./styles.css"; // Use a single CSS file for styling
+import "./styles.css";
 
 const LandingPage = () => {
   return (
@@ -21,18 +21,23 @@ const LandingPage = () => {
         </Navbar>
       </div>
 
-      <Container className="d-flex flex-column align-items-center justify-content-center min-vh-100 text-center">
+      <Container className="jumuia-container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center" style={{
+        backgroundImage: `url('/jImages/imageThree.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
         <h1 className="text-primary fw-bold">Jumuiya Pay</h1>
         <p className="text-muted mt-3">
           Empowering chama groups with seamless financial services and efficient contribution management.
         </p>
         <Button variant="primary" className="mt-4">Get Started</Button>
-      </Container>
+      </Container> 
+
 
       <Container id="about" className="my-5">
         <Row className="align-items-center">
           <Col md={6} className="text-center">
-            <Image src="/about-us.jpg" alt="About Us" fluid rounded />
+            <Image src="/jImages/imageFour.jpg" alt="About Us" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
             <h2 className="text-primary">About Us</h2>
@@ -57,7 +62,7 @@ const LandingPage = () => {
         <h2 className="text-center mb-4">Our Services</h2>
         <Row className="align-items-center mb-4">
           <Col md={6} className="text-center">
-            <Image src="/transaction-tracking.jpg" alt="Real-Time Transaction Tracking" fluid rounded />
+            <Image src="/jImages/imageTwo.jpg" alt="Real-Time Transaction Tracking" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
             <h3>Real-Time Transaction Tracking</h3>
@@ -66,7 +71,7 @@ const LandingPage = () => {
         </Row>
         <Row className="align-items-center mb-4 flex-md-row-reverse">
           <Col md={6} className="text-center">
-            <Image src="/record-keeping.jpg" alt="Automated Record Keeping" fluid rounded />
+            <Image src=" /jImages/imageOne.jpg" alt="Automated Record Keeping" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
             <h3>Automated Record Keeping</h3>
@@ -75,7 +80,7 @@ const LandingPage = () => {
         </Row>
         <Row className="align-items-center mb-4">
           <Col md={6} className="text-center">
-            <Image src="/financial-reports.jpg" alt="Financial Reports" fluid rounded />
+            <Image src="/jImages/charts.jpg" alt="Financial Reports" fluid rounded />
           </Col>
           <Col md={6} className="text-center text-md-start">
             <h3>Financial Reports</h3>
