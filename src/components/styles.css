@@ -133,5 +133,22 @@ body {
     color: #f8f9fa;
   }
   
+  .team-card {
+    width: 90%;
+    max-width: 250px;
+    padding: 5px;
+  }
   
+  .team-img {
+    width: 120px;  /* Adjust as needed */
+    height: 120px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image fills the circle */
+    border: 3px solid #ddd; /* Optional: adds a border around the image */
+  }
+  
+  
+  #team {
+    background-color: #f8f9fa;
+    padding-top: 40px 0;
+  }
   

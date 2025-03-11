@@ -1,15 +1,48 @@
 import React from "react";
-import { Container, Navbar, Nav, Button, Row, Col, Image } from "react-bootstrap";
+import { Container, Navbar, Nav, Button, Row, Col, Image, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./styles.css";
+
+const teamMembers = [
+    {
+      name: "Dennis Mbuno",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Front-end programmer"
+    },
+    {
+      name: "Jessica Ng'ang'a",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Back-end Programmer"
+    },
+    {
+      name: "Catherine Mumbi",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Web designer."
+    },
+    {
+      name: "Precious Ndulu",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Front-end programmer (Project Lead)"
+    },
+    {
+      name: "Sheilla Achieng'",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Back-end Programmer"
+    },
+    {
+      name: "Dr. Lawrence Nderu",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Project Investigator"
+    }
+  ];
 
 const LandingPage = () => {
   return (
     <>
       <div className="navbar-background"> {/* Wrapper div for background */}
         <Navbar bg="primary" variant="dark" expand="lg" className="px-4">
-          <Navbar.Brand href="#">Jumuiya Pay</Navbar.Brand>
+          <Navbar.Brand href="#">FundConnect</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -133,6 +166,31 @@ const LandingPage = () => {
   </Row>
 </Container>
 
+<Container id="team" className="TeamSection">
+  <h2 style={{marginLeft:"30vw"}}>Meet Our Team</h2>
+  <p className="text-muted" style={{marginLeft:"26vw"}}>Dedicated professionals behind our success.</p>
+  <Row className="justify-content-center">
+    {teamMembers.map((member, index) => (
+      <Col key={index} md={4} sm={6} xs={12} className="d-flex justify-content-center">
+        <Card className="team-card text-center border-0">
+          <Card.Img
+            variant="top"
+            src={member.image}
+            alt={member.name}
+            className="team-img rounded-circle mx-auto d-block"
+          />
+          <Card.Body>
+            <Card.Title>{member.name}</Card.Title>
+            <Card.Text>{member.description}</Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
+    ))}
+  </Row>
+</Container>
+
+
+
 
 
 <Container
@@ -154,4 +212,5 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
 
