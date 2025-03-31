@@ -1,10 +1,13 @@
 import React from "react";
 import { Container, Navbar, Nav, Button, Row, Col, Image } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./styles.css";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="navbar-background"> {/* Wrapper div for background */}
@@ -21,24 +24,24 @@ const LandingPage = () => {
         </Navbar>
       </div>
 
-<Container
-  fluid
-  className="jumuia-container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center w-100 m-0"
-  style={{
-    backgroundImage: `url('/jImages/bgHome.jpg')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <h1 style={{ color: "white" }}>FundConnect</h1>
-  <p style={{ color: "white" }}>
-    Empowering chama groups with seamless financial services and efficient contribution management.
-  </p>
-  <Button className="Hbutton">Get Started</Button>
-</Container>
+      <Container
+        fluid
+        className="jumuia-container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center w-100 m-0"
+        style={{
+          backgroundImage: `url('/jImages/bgHome.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h1 style={{ color: "white" }}>FundConnect</h1>
+        <p style={{ color: "white" }}>
+          Empowering chama groups with seamless financial services and efficient contribution management.
+        </p>
+        {/* Updated Button to navigate to /signin */}
+        <Button className="Hbutton" onClick={() => navigate('/signin')}>Get Started</Button>
+      </Container>
 
-
-
+      {/* Rest of the LandingPage code remains the same */}
       <Container id="about" className="my-5">
         <Row className="align-items-center">
           <Col md={6} className="text-center">
@@ -94,64 +97,38 @@ const LandingPage = () => {
         </Row>
       </Container>
 
+      <Container id="features" className="my-5">
+        <h2 className="text-center mb-4">Why Choose Us?</h2>
+        <Row>
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-credit-card fs-2 feature-icon"></i>
+            <h4>Automated Transactions</h4>
+            <p>Effortlessly manage contributions and payouts with our automated system, saving you time and reducing errors.</p>
+          </Col>
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-bar-chart fs-2 feature-icon"></i>
+            <h4>Transparent Reporting</h4>
+            <p>Gain complete visibility into your chama's finances with detailed reports and real-time updates.</p>
+          </Col>
+          <Col md={4} className="mb-4 text-center">
+            <i className="bi bi-shield-lock fs-2 feature-icon"></i>
+            <h4>Secure Platform</h4>
+            <p>Rest assured that your chama's funds are safe and secure with our robust security measures.</p>
+          </Col>
+        </Row>
+      </Container>
 
-<Container id="features" className="my-5">
-  <h2 className="text-center mb-4">Why Choose Us?</h2>
-  <Row>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-credit-card fs-2 feature-icon"></i>
-      <h4>Automated Transactions</h4>
-      <p>Effortlessly manage contributions and payouts with our automated system, saving you time and reducing errors.</p>
-    </Col>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-bar-chart fs-2 feature-icon"></i>
-      <h4>Transparent Reporting</h4>
-      <p>Gain complete visibility into your chama's finances with detailed reports and real-time updates.</p>
-    </Col>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-shield-lock fs-2 feature-icon"></i>
-      <h4>Secure Platform</h4>
-      <p>Rest assured that your chama's funds are safe and secure with our robust security measures.</p>
-    </Col>
-  </Row>
-  <Row>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-gear fs-2 feature-icon"></i>
-      <h4>Customizable Settings</h4>
-      <p>Tailor your chama's experience to your specific needs with flexible settings for contribution amounts and more.</p>
-    </Col>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-wallet2 fs-2 feature-icon"></i>
-      <h4>Multi-Channel Payment Integration</h4>
-      <p>Direct integration with Mpesa and bank accounts for automated transaction recording.</p>
-    </Col>
-    <Col md={4} className="mb-4 text-center">
-      <i className="bi bi-headset fs-2 feature-icon"></i>
-      <h4>Dedicated Support</h4>
-      <p>Our friendly and knowledgeable support team is always available to answer your questions and provide assistance.</p>
-    </Col>
-  </Row>
-</Container>
-
-
-
-<Container
-  id="contact"
-  fluid
-  className="my-5 text-center w-100 m-0"
->
-  <h2>Contact Us</h2>
-  <p>
-    Have questions? Our dedicated team is ready to assist you. Connect with us for support, information, or to discuss how our platform can elevate your chama's financial journey.
-  </p>
-  <a href="mailto:support@jumuiyapay.com" className="text-white fs-3">
-    <i className="bi bi-envelope-fill"></i>
-  </a>
-</Container>
-
+      <Container id="contact" fluid className="my-5 text-center w-100 m-0">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions? Our dedicated team is ready to assist you. Connect with us for support, information, or to discuss how our platform can elevate your chama's financial journey.
+        </p>
+        <a href="mailto:support@jumuiyapay.com" className="text-white fs-3">
+          <i className="bi bi-envelope-fill"></i>
+        </a>
+      </Container>
     </>
   );
 };
 
 export default LandingPage;
-
