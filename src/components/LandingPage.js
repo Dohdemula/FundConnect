@@ -1,9 +1,42 @@
 import React from "react";
-import { Container, Navbar, Nav, Button, Row, Col, Image } from "react-bootstrap";
+import { Container, Navbar, Nav, Button, Row, Col, Image, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./styles.css";
+
+const teamMembers = [
+    {
+      name: "Dennis Mbuno",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Front-end programmer"
+    },
+    {
+      name: "Jessica Ng'ang'a",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Back-end Programmer"
+    },
+    {
+      name: "Catherine Mumbi",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Web designer."
+    },
+    {
+      name: "Precious Ndulu",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Front-end programmer (Project Lead)"
+    },
+    {
+      name: "Sheilla Achieng'",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Back-end Programmer"
+    },
+    {
+      name: "Dr. Lawrence Nderu",
+      image: "/jImages/profile_placeholder.webp",
+      description: "Project Investigator"
+    }
+  ];
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -12,7 +45,7 @@ const LandingPage = () => {
     <>
       <div className="navbar-background"> {/* Wrapper div for background */}
         <Navbar bg="primary" variant="dark" expand="lg" className="px-4">
-          <Navbar.Brand href="#">Jumuiya Pay</Navbar.Brand>
+          <Navbar.Brand href="#">FundConnect</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -132,3 +165,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+

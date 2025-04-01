@@ -103,216 +103,32 @@ p {
   text-align: center;
 }
 
-.feature-icon {
-  color: #14815a;
-}
-
-/* Contact Us Section */
-#contact {
-  background-color: #14815a;
-  color: white;
-  padding: 60px 0;
-}
-
-#contact p {
-  color: white;
-  font-size: 1.2rem;
-}
-
-#contact a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-#contact a:hover {
-  color: #f8f9fa;
-}
-
-/* Auth Page Styles */
-.auth-container {
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.auth-row {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Image Card */
-.auth-image-card {
-  border: none;
-  border-radius: 10px 0 0 10px;
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  background-color: #f1f1f1; /* Fallback if image doesn't load */
-}
-
-.auth-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Form Card */
-.auth-form-card {
-  border: none;
-  border-radius: 0 10px 10px 0;
-  padding: 40px;
-  background-color: white;
-  height: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.auth-form-card h2 {
-  color: #034a31;
-  font-family: 'Times New Roman', serif;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.auth-form-card .form-control {
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-}
-
-.auth-form-card .form-control:focus {
-  border-color: #33a17c;
-  box-shadow: 0 0 5px rgba(51, 161, 124, 0.3);
-}
-
-.auth-form-card .Hbutton {
-  background-color: #034a31;
-  border: none;
-  padding: 12px;
-  font-size: 1.1rem;
-  width: 100%;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-}
-
-.auth-form-card .Hbutton:hover {
-  background-color: #33a17c;
-  transform: translateY(-2px);
-}
-
-.auth-form-card a {
-  color: #034a31;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.auth-form-card a:hover {
-  color: #33a17c;
-  text-decoration: underline;
-}
-
-.auth-form-card .text-center {
-  margin-top: 20px;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-  .auth-image-card {
-    display: none;
+  .feature-icon {
+    color: #14815a;
   }
   
-  .auth-form-card {
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Contact Us Section */
+  #contact {
+    background-color: #14815a;
+    color: white;
+    padding: 60px 0;
   }
   
-  .auth-row {
-    max-width: 500px;
-  }
-}
-
-@media (min-width: 769px) {
-  .auth-image-card,
-  .auth-form-card {
-    min-height: 550px;
-  }
-}
-
-/* Social Login Styles */
-.social-login-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: white;
-}
-
-.social-btn {
-  width: 100%;
-  max-width: 250px;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.social-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.facebook-btn {
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-
-.google-btn {
-  background-color: #db4437;
-  border-color: #db4437;
-}
-
-.phone-btn {
-  background-color: #333;
-  border-color: #333;
-}
-
-/* Mobile Social Buttons */
-@media (max-width: 767.98px) {
-  .mobile-social-buttons {
-    margin-top: 1.5rem;
+  #contact p {
+    color: white;
+    font-size: 1.2rem;
   }
   
-  .mobile-social-buttons .social-btn {
-    max-width: 100%;
-    margin-bottom: 0.75rem;
+  #contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
   }
   
-  .divider-text {
-    display: block;
-    text-align: center;
-    margin: 1rem 0;
-    color: #6c757d;
-    position: relative;
+  #contact a:hover {
+    color: #f8f9fa;
   }
   
-  .divider-text::before,
-  .divider-text::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid #dee2e6;
-    margin: auto 0.5rem;
-  }
-}
+  
+  
