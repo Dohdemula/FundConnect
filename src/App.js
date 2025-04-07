@@ -3,7 +3,10 @@ import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignIn from "./components/SignIn";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/AdminDashboard";
+import Members from "./components/Members";
+import Contributions from "./components/Contributions";
+import Events from "./components/Events"; // Import the Events component
 import { auth } from "./components/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { ToastContainer } from 'react-toastify';
@@ -44,6 +47,9 @@ function App() {
         <Route path="/login" element={user ? <Navigate to="/dashboard" /> : <Login />} />
         <Route path="/signin" element={user ? <Navigate to="/dashboard" /> : <SignIn />} />
         <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to="/login" />} />
+        <Route path="/members" element={user ? <Members /> : <Navigate to="/login" />} />
+        <Route path="/contributions" element={user ? <Contributions /> : <Navigate to="/login" />} />
+        <Route path="/events" element={user ? <Events /> : <Navigate to="/login" />} /> {/* New Events route */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
