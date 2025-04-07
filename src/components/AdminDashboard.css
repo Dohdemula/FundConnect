@@ -1,0 +1,257 @@
+.admin-dashboard {
+    display: flex;
+    background-color: #ffffff; /* Set to pure white */
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    }
+    /* SIDEBAR */
+    .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .sidebar h2 {
+    text-align: center;
+    color: #198754;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 22px;
+    }
+    
+    .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    }
+    
+    .sidebar ul li {
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    background-color: #eaf5eb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    }
+    
+    .sidebar ul li:hover {
+    background-color: #198754; /* Green hover */
+    color: #ffffff; /* Text turns white */
+    transform: scale(1.05);
+    }
+    
+    /* MAIN CONTENT */
+    .main-content {
+    flex-grow: 1;
+    padding: 20px; /* Keeps padding but removes container effect */
+    background-color: #ffffff; /* Ensures full white page */
+    }
+    
+    /* HEADER */
+    .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced spacing */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dee2e6;
+    }
+    
+    .admin-header h1 {
+    color: #198754;
+    font-size: 26px;
+    font-weight: bold;
+    }
+    
+    .admin-header button {
+    background-color: #198754 !important;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+    .admin-header button:hover {
+    background-color: #b8e6c1 !important;
+    color: #145c44;
+    }
+    
+    /* TRANSACTIONS */
+    .recent-transactions {
+    background-color: white;
+    padding: 15px; /* Reduced spacing */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .recent-transactions h2 {
+    color: #198754;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px; /* Reduced spacing */
+    }
+    
+    .table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    }
+    
+    /* TRANSACTION ROW HOVER EFFECT */
+    .table tbody tr:hover {
+    background-color: #198754 !important; /* Light green hover */
+    transition: 0.3s;
+    }
+    
+    /* TABLE HEADERS */
+    .table th {
+    background-color: #198754 !important;
+    color: white !important;
+    padding: 12px;
+    text-align: center;
+    }
+    
+    .table td {
+    white-space: nowrap; /* Keeps text on a single line */
+    overflow: hidden;/* Prevents spilling out */
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    }
+    
+    /* BADGES */
+    .badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    }
+    
+    .bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529;
+    }
+    
+    .bg-success {
+    background-color: #198754 !important;
+    color: white;
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+    .admin-dashboard {
+    flex-direction: column;
+    }
+    
+    .sidebar {
+    width: 100%;
+    box-shadow: none;
+    }
+    
+    .main-content {
+    padding: 15px;
+    }
+    }
+    /* AdminDashboard.css */
+    
+    /* General Styling */
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    body.dark-mode {
+    background-color: #111122;
+    color: #e1e1e1;
+    }
+    
+    .admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    }
+    
+    /* Dark mode table adjustments */
+    body.dark-mode .table {
+    color: #e1e1e1;
+    }
+    
+    body.dark-mode .modal-content {
+    background-color: #1e1e2d;
+    color: #e1e1e1;
+    }
+    
+    body.dark-mode .close {
+    color: #e1e1e1;
+    }
+    
+    /* Smooth transitions */
+    .sidebar, .main-content, .card, .table, button, .modal-content {
+    transition: all 0.3s ease;
+    }
+    
+    /* Hover effects for cards */
+    .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
+    
+    body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #555;
+    }
+    
+    body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+    .admin-dashboard {
+    animation: fadeIn 0.5s ease;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+    .admin-dashboard {
+    flex-direction: column;
+    }
+    
+    .sidebar {
+    width: 100% !important;
+    max-height: 200px;
+    overflow-y: auto;
+    }
+    }
+    
